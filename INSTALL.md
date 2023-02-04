@@ -11,3 +11,10 @@ SPDX-License-Identifier: MIT
 > Certain configurations may not work for you. So, please read through the code
 > and modify things as you see fit. _Do not_ just blindly install thinking that
 > stuff will work right out of the box.
+
+## Prerequisites
+
+You will need the following software in order to properly install this project:
+
+- Git
+- POSIX-like shell, e.g., dash, bash, yash, etc...
