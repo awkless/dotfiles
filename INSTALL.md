@@ -31,5 +31,14 @@ and verify a tagged release with the `git-verify-tag` command.
 > your findings with ample evidence. _Do not_ submit a bug report! Also get rid
 > your downloaded version of the project as it has been compromised.
 
+## Using `setup.sh`
+
+The `setup.sh` file is a simple installation file that sets up the
+awkless/dotfiles project onto your `$HOME` directory. Just run it like so:
+
+```
+# ./setup.sh
+```
+
 [semver2]: https://semver.org
 [pgp]: https://keys.openpgp.org/about/usage
