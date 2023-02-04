@@ -29,4 +29,20 @@ with some special settings).
 For more detailed installation instructions please visit the provided
 [installation file][install].
 
+## Contributing
+
+This repository is open to the following forms of contribution:
+
+- Bug reports
+- Feature requests
+- Improvements or fixes to dotfiles
+- Improvements or fixes to scripts
+- Improvements or fixes to CI pipeline
+- Improvements or fixes to documentation
+
+Please follow the guidelines outlined by the provided
+[contribution guideline file][contributing]. Pull requests will not be accepted
+if these guidelines are violated without good reason.
+
 [install]: https://github.com/awkless/dotfiles/blob/main/INSTALL.md
+[contributing]: https://github.com/awkless/dotfiles/blob/main/CONTRIBUTING.md
