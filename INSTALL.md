@@ -18,3 +18,18 @@ You will need the following software in order to properly install this project:
 
 - Git
 - POSIX-like shell, e.g., dash, bash, yash, etc...
+
+## Versioning
+
+This simple project uses [Semantic Versioning 2.0.0][semver2]. All releases are
+signed with Awkless' GPG key \<<jasonpena@awkless.com>\> for authentication
+purposes. You can obtain Awkless' public key through [keys.openpgp.org][pgp],
+and verify a tagged release with the `git-verify-tag` command.
+
+> __ATTENTION__: If `git-verify-tag` states that the release you are verifying
+> has a bad signiture, then send an email to \<<jasonpena@awkless.com>\> about
+> your findings with ample evidence. _Do not_ submit a bug report! Also get rid
+> your downloaded version of the project as it has been compromised.
+
+[semver2]: https://semver.org
+[pgp]: https://keys.openpgp.org/about/usage
