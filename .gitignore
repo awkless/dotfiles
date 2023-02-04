@@ -1,0 +1,72 @@
+# SPDX-FileCopyrightText: 2022-2023 Jason Pena <jasonpena@awkless.com>
+# SPDX-License-Identifier: CC0-1.0
+
+# Ignore specific XDG_CONFIG_HOME directories...
+.config/dotfiles
+
+# Ignore specific HOME directories...
+Desktop/
+Documents/
+Downloads/
+Music/
+Pictures/
+Templates/
+Public/
+projects/
+school/
+documents/
+downloads/
+.cache/
+
+# Backup files...
+*.bak
+*.gho
+*.ori
+*.orig
+*.tmp
+*.rej
+
+# Archive files...
+*.zip
+*.tar
+*.gz
+*.gzip
+*.xz
+*.xar
+
+# Diff stuff...
+*.patch
+*.diff
+
+# GPG stuff...
+secring.*
+
+# Vim stuff...
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+Session.vim
+Sessionx.vim
+.netrwhist
+*~
+tags
+[._]*.un~
+
+# Ignore tags created by etags, ctags, gtags, and cscope...
+TAGS
+.TAGS
+!TAGS/
+tags
+.tags
+!tags/
+gtags.files
+GTAGS
+GRTAGS
+GPATH
+GSYSMS
+cscope.files
+cscope.out
+cscope.in.out
+cscope.po.out
