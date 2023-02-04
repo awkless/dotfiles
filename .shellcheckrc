@@ -1,0 +1,17 @@
+# SPDX-FileCopyrightText: 2022-2023 Jason Pena <jasonpena@awkless.com>
+# SPDX-License-Identifier: CC0-1.0
+
+# Look for sourced files relative to the checked script...
+source-path=SCRIPTDIR
+
+# Allow opening any sourced file, even if not specified as input...
+external-sources=true
+
+# Turn on warnings for unqouted variables with safe values...
+enable=quote-safe-variables
+
+# Stop complaining about indirect status checking...
+disable=SC2181
+
+# Turn on warnings for unassigned uppercase variables...
+enable=check-unassigned-uppercase
