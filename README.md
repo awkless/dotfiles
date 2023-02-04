@@ -44,5 +44,13 @@ Please follow the guidelines outlined by the provided
 [contribution guideline file][contributing]. Pull requests will not be accepted
 if these guidelines are violated without good reason.
 
+## License
+
+This project uses the [MIT license][mit] and the [CC0-1.0 license][cc0-1.0].
+The MIT license is used for source code and documentation, and the CC0-1.0
+license for files that are to small or to generic to claim copyright over.
+
 [install]: https://github.com/awkless/dotfiles/blob/main/INSTALL.md
 [contributing]: https://github.com/awkless/dotfiles/blob/main/CONTRIBUTING.md
+[mit]: https://github.com/awkless/dotfiles/blob/main/LICENSE/MIT.txt
+[cc0-1.0]: https://github.com/awkless/dotfiles/blob/main/LICENSE/CC0-1.0.txt
