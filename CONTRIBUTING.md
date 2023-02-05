@@ -88,4 +88,15 @@ Overall, try to keep the formatting of files as consistent as possible. @awkless
 is not going to be very pedantic about code style. Plus, he may alter the
 formatting afterwards anyway. This project is rather volatile.
 
+## Licensing and Copyright
+
+This project abides by the [REUSE 3.0][reuse3] specification to determine the
+licensing and copyright of files in the code base. Thus, all files must have the
+proper SPDX copyright and licensing tags at the top always. If you want to
+determine if your current chanes are REUSE compliant, then just use their
+[reuse tool][reuse-tool].
+
 [cc1.0.0]: https://www.conventionalcommits.org/en/v1.0.0/
+[bashism]: https://mywiki.wooledge.org/Bashism
+[reuse3]: https://reuse.software/spec/
+[reuse-tool]: https://reuse.software/tutorial/
