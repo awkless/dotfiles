@@ -72,4 +72,20 @@ project:
 Keep the subject, body, and trailer of your commits below 80 characters unless
 you have good reason otherwise.
 
+## Coding Style
+
+This section requires a lot of discretion, because dotfiles may vary in
+formatting. However, here are some general rules:
+
+- Maximum line limit is 80 characters (unless you have a good reason to ignore
+  this).
+- Keep indentation around 2 spaces.
+- Any all shell scripts must be POSIX compliant, i.e., avoid
+  [bashisms][bashism].
+- Prefer snake\_case when creating variables.
+
+Overall, try to keep the formatting of files as consistent as possible. @awkless
+is not going to be very pedantic about code style. Plus, he may alter the
+formatting afterwards anyway. This project is rather volatile.
+
 [cc1.0.0]: https://www.conventionalcommits.org/en/v1.0.0/
