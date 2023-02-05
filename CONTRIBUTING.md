@@ -54,3 +54,22 @@ Here some tips for better pull requests:
 - Label your pull request if possible.
 - If your pull request helps progress a milestone, then label it with that
   milestone for more attention.
+
+## Commit Style
+
+All commits you submit must abide by the [Conventional Commits 1.0.0][cc1.0.0]
+specification. Here are the following valid types for commits accepted by this
+project:
+
+- __chore__: General change that does not affect production code.
+- __feat__: Change that implements a feature in production code.
+- __fix__: Change that fixes a bug in production code.
+- __docs__: Improvements or fixes to documentation.
+- __style__: Improvements or fixes to the formatting of code.
+- __ref__: Changes involve refactoring the code base.
+- __rev__: A set of commits were revereted.
+
+Keep the subject, body, and trailer of your commits below 80 characters unless
+you have good reason otherwise.
+
+[cc1.0.0]: https://www.conventionalcommits.org/en/v1.0.0/
