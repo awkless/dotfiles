@@ -1,0 +1,22 @@
+#!/bin/sh
+# SPDX-FileCopyrightText: 2023 Jason Pena <jasonpena@awkless.com>
+# SPDX-License-Identifier: MIT
+
+files="$HOME/LICENSES $HOME/README.md $HOME/INSTALL.md $HOME/AUTHORS.md
+       $HOME/THANKS.md $HOME/CONTRIBUTING.md $HOME/.github"
+
+dotfiles()
+{
+  git --git-dir="$HOME/.config/dotfiles" --work-tree="$HOME" "$@"
+}
+
+if [ "$1" = 'home-clean' ]; then
+  dotfiles pull &&
+  dotfiles update-index --assume-unchanged "$files" &&
+  rm -rf "$files"
+elif [ "$1" = 'home-restore' ]; then
+  dotfiles update-index --no-assume-unchanged "$files" &&
+  dotfiles checkout -f
+else
+  dotfiles "$*"
+fi
