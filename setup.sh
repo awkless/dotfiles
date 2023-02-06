@@ -27,8 +27,8 @@ git clone --bare "https://github.com/awkless/dotfiles.git" \
                  "$HOME/.config/dotfiles"
 
 mkdir -vp "$HOME/.cache/dotfiles-backup"
-dotfiles checkout
-if [ "$?" = 0 ]; then
+status="$(dotfiles checkout)"
+if [ "$status" = 0 ]; then
   echo "$me: checkout configuration"
 else
   echo "$me: backing up pre-existing dotfiles";
