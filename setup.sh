@@ -17,13 +17,14 @@ dotfiles()
 
 if [ -d "$HOME/.config/dotfiles" ]; then
   echo "$me: reinstalling configuration"
-  files="$(git ls-files | sed 's,/[^/]*$,,' | uniq | awk -vT="$HOME/" '{print T $0}')"
+  files="$(git ls-files | awk -vT="$HOME/" '{print T $0}')"
   echo "$files" | xargs --verbose -I{} rm -rfv "{}"
-  rm -rfv "$HOME/.cache/dotfiles-backup"
+  rm -rfv "$HOME/LICENSES/"
+  rm -rfv "$HOME/.github/"
   rm -rfv "$HOME/.config/dotfiles"
 fi
 
-git clone --bare "https://github.com/awkless/dotfiles.git" \
+git clone --bare -b feat/setup "https://github.com/awkless/dotfiles.git" \
                  "$HOME/.config/dotfiles"
 
 mkdir -vp "$HOME/.cache/dotfiles-backup"
@@ -33,6 +34,6 @@ if [ "$status" = 0 ]; then
 else
   echo "$me: backing up pre-existing dotfiles";
   dotfiles checkout 2>&1 | grep -E "\s+\." | awk '{print $1}' | \
-	   xargs -I{} mv {} "$HOME/.cache/dotfiles-backup/"{}
+	   xargs -I{} mv -pv {} "$HOME/.cache/dotfiles-backup/"{}
 fi
 dotfiles checkout
